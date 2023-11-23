@@ -1,0 +1,296 @@
+<!--Autor: ISAAC GABRIEL REYES ALBARRACÍN-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TechOnLearn</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<button id="toggleTheme">Dark Mode</button>	
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar #team_section-->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#portfolio_section">About Us</a></li>				
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>				
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">START HERE!</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Learning is something innate in humans, do it.</p>
+				<h5>Education, encompassing the acquisition of knowledge, skills, and values, is key in today's market. This website offers comprehensive learning in science, programming, philosophy, politics, and economics, fostering a convergence of disciplines essential for professional growth and informed decision-making in a dynamic, globalized world.</h5>
+				<div class="play">
+					<img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com/watch?v=uD4izuDMUQA&t=8s" target="_blank">Watch Now</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.png" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/isaacreyestipocarnet.jpg" alt="Username">
+				<p>Isaac Reyes</p>
+			</div>
+			<ul>
+				
+				<li><a href="#portfolio_section">About us</a></li>				
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+	
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Subjects on TechOnLearn</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/science.html"><img src="images/courses/book.png">Science</a></div>		
+		<div class="det"><a href="subjects/science.html#sample_papers"><img src="images/courses/paper.png">Sample Papers</a></div>
+		<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer Courses</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Philosophy</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Politics</a></div>
+		<div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Projects</a></div>
+		</div>
+	</div>
+	<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #080fda, #021724); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education, spanning sciences to economics, shapes tomorrow's leaders. It's not just about knowledge; it's about learning to adapt and grow. Remember, the true cost isn't in learning but in remaining unaware. Embrace change, and let your attitude, not just aptitude, elevate you in this technology-driven world, where Human-Computer Interaction (HCI) is pivotal.”</div></marquee>
+
+<!-- About -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">About us</p></center>
+		<div class="content">
+			<p>
+				“TechOnLearn, conceived and developed by a student with a focus on Human-Computer Interaction (HCI), serves as a pioneering online platform. It's designed to offer the most pertinent and current educational content, enabling students to engage in interactive and dynamic learning. This platform embodies the principle that education is a gateway to the future, tailored for those who are actively preparing for it today. It emphasizes that success is shaped more by one's attitude than by inherent abilities. In a world where the absence of education is costlier than its presence, TechOnLearn stands as a testament to the power of learning how to learn and adapt, leveraging the latest in HCI to enhance the educational experience.”
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>Increasing this data every year!</p>
+		<div class="smbox">
+		<span><center><div class="data">71</div><div class="det">Enrolled Students</div></center></span>
+		<span><center><div class="data">39</div><div class="det">Total Courses</div></center></span>
+		<span><center><div class="data">15</div><div class="det">Placed Students</div></center></span>
+		<span><center><div class="data">8</div><div class="det">Total Projects</div></center></span>
+		</div>
+	</div>
+
+<!--Frase de Isaac: A priori y a posteriori que Ortega & Gasset; la educación, curiosidad y criterio propio comienza con: 'Siempre que enseñes, enseña a la vez a dudar de lo que enseñas, empero también de los que dudan sobre eso y consiguiente'-->
+	<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">The Creators</p></center>
+		<div class="totalcard">
+			<div class="card">				<center><img src="images/creator/isaacreyes.jpeg"></center>
+				<center><div class="card-title">Isaac Reyes</div>
+				<div id="detail">
+					<p>“ HCI es vital para la educación, sobre todo en el diseño UX/UI “</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/isaac-reyes-358760141/" target="_blank"><button class="btn-roshan">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/isaacreyestipocarnet.jpg"></center>
+				<center><div class="card-title">Isaac Reyes</div>
+				<div id="detail">
+					<p>“ HCI is vital for education, especially in UX/UI Design “</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/isaac-reyes-358760141/" target="_blank"><button class="btn-akhil">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="subjects/science.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Computer Courses</p></div></a>
+		<a href="subjects/science.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Building Concepts for Competitive Exams</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Online Video Lectures</p></div></a>
+		<a href="subjects/science.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers of Various Competitive Exams</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>Performance and Ranking Report</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors & Mentors</p></div></a>
+		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback/message to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:isaac.reyes@epn.edu.ec" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist1.jpg"><p>Saphire Domy</p>
+				<h6>React</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					I took a React course with instructor Isaac Reyes, and it was a rewarding experience. The homeworks, challenges and assignments, in fact, the entire content, were outstanding. Some problems were challenging yet intriguing. The explanations were very clear and thorough wherever I encountered difficulties.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist2.jpg"><p>Clay Clairton</p>
+				<h6>Philosophy</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					The philosophy course I took was transformative. Its engaging materials and interactive lessons broadened my perspectives and reshaped my thinking. A truly mind-opening experience!
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist3.jpg"><p>Dev Seth</p>
+				<h6>Science</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					The physics course was a revelation. Compact yet impactful, it expanded my understanding of the universe through its concise, thought-provoking content. A truly enlightening journey into the laws of nature, I love a lot all :D
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist4.jpg"><p>Rita Phill</p>
+				<h6>Economics & Others</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					The course on economics was a game-changer for me. The other subject like politics not at all. But in economics it provided a clear and engaging exploration of economic principles, profoundly altering my view on how markets operate. An educational journey that was both enlightening and deeply impactful
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo - Copy.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="https://www.facebook.com/isaac.reyes.22"><img src="images/icon\fb.png"></a>
+					<a href="https://www.instagram.com/isaacgabrielreyes/"><img src="images/icon\insta.png"></a>
+					<!--<a href="#"><img src="images/icon/"></a>-->
+					<a href="https://www.youtube.com/channel/UCYpJySKiotPH6PG-4ccUn-A"><img src="images/icon\ytube.png"></a>
+					<a href="https://www.linkedin.com/in/isaac-reyes-358760141/"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Created By Isaac Reyes, All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Escuela Politécnica Nacional.<br>Pichincha, Quito, Ecuador.</p><br>
+				<p><img src="images/icon/phone.png"> +593 98 304 6689<br><img src="images/icon/mail.png">&nbsp; isaac.reyes@epn.edu.ec</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter your email to get our news and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	<!-- Al final de tu archivo index.html -->
+	<script src="script.js"></script>
+
+</body>
+</html>

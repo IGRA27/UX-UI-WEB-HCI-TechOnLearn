@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+	<title>Quiz on TechOnLearn</title>
+	<link rel="stylesheet" type="text/css" href="quizStyle.css">
+	<script type="text/javascript" src="../script.js"></script>
+</head>
+<body>
+	
+<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+			<a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a></div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+			<ul id="list-switch">
+				<li><a href="science.html"><img src="../images/courses/d1.png" class="icon">Science</a></li>
+				<li><a href="#"><img src="../images/courses/paper.png" class="icon">Economics</a></li>
+				<li><a href="#"><img src="../images/courses/computer.png" class="icon">Computer Courses (React,etc)</a></li>
+				<li><a href="#"><img src="../images/courses/data.png" class="icon">Philosophy</a></li>
+				<li><a href="#"><img src="../images/courses/algo.png" class="icon">Politics</a></li>
+				<li><a href="#"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
+			</ul>
+			<div class="search" id="search-switch">
+				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
+			</div>
+		</div>
+	</header>
+	
+
+<!-- MAIN Heading of Page -->
+	<div class="title" id="title">
+		<span>Daily Quiz on TechOnLearn</span>
+		<div class="shortdesc"><br>
+			<p>If you think education is expensive, try ignorance</p>
+		</div>
+		<button onclick="startquiz()">Start Now</button>
+	</div>
+
+
+<div class="panel" id="panel">
+	
+	<div class="left-side" id="left">
+		<ul>
+			<li onclick="quizt(1)">HOME</li>
+			<li onclick="quizt(2)">React</li>
+			<li onclick="quizt(3)">Python</li>
+			<li onclick="quizt(4)">Economics</li>
+			<li onclick="quizt(5)">Politics</li>
+			<li onclick="quizt(6)">Philosophy</li>
+			<li onclick="quizt(7)">Physics</li>			
+			<li onclick="quizt(11)">Interview Questions</li>
+		</ul>
+	</div>
+
+	<div class="right-side" id="right">
+		<div id="quiz-container">
+			
+			<div id="f1"><div class="quiz-frame main-frame"></div></div>
+			<div id="f2"><iframe class="quiz-frame" src="LINK DE GOOGLE DOCS CON LAS PRUEBAS" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
