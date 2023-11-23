@@ -1,4 +1,4 @@
-## OLEarn Digital (Online Learning Website)
+## TechOnLearn (Online Learning Website)
 Education online for students
 
 ![](pcView.JPG)
